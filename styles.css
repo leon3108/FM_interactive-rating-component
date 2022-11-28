@@ -1,0 +1,189 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    border-radius: 2rem;
+    background-color: hsl(213, 19%, 18%);
+    width: 90%;
+    height: 70%;
+}
+
+#rating {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+}
+
+.parent {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+}
+
+.circle {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsl(213, 8%, 28%);
+    border-color: hsl(213, 8%, 28%);
+    border-style: solid;
+    border-radius: 50%;
+}
+
+#star {
+    position: absolute;
+    width: 50%;
+    top: 25%;
+    left: 25%;
+    z-index: 1;
+}
+
+#question {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Overpass';
+}
+
+#description {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Overpass';
+    color: hsl(217, 12%, 63%);
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.option {
+    color: hsl(217, 12%, 63%);
+    background-color: hsl(213, 8%, 28%);
+    border-color: hsl(213, 8%, 28%);
+    border-style: solid;
+    border-radius: 50%;
+    width: 15%;
+    height: 150%;
+}
+
+.option:hover {
+    background-color: hsl(25, 97%, 53%);
+    color :white;
+    border-color: hsl(25, 97%, 53%);
+}
+
+.option:focus {
+    background-color: hsl(217, 12%, 63%);
+    color :white;
+    border-color: hsl(217, 12%, 63%);
+}
+
+#button_submit {
+    height: 2.3rem;
+    border-radius: 3rem;
+    border-color: hsl(25, 97%, 53%);
+    border-style: solid;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    font-family: 'Overpass';
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+#button_submit:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+    border-color: white;
+}
+
+#thank {
+    display: none;
+    color: white;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#img_thank {
+    width: 50%;
+    align-self: center;
+}
+
+#text_container {
+    font-family: 'Overpass';
+    font-weight: 400;
+    height: 40px;
+    color: hsl(25, 97%, 53%);
+    border-radius: 100px;
+    background-color: hsl(213, 8%, 28%);
+    display: flex;
+    width: 70%;
+    align-self: center;
+    align-items:center;
+}
+  
+#text {
+    width: 100%;
+}
+
+@media (min-width: 320px){
+    #container {
+        width: 90%;
+        height: 70%;
+    }
+
+    .option {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 1000px){
+    #container {
+        width: 30%;
+        height: 45%;
+    }
+
+    .option {
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+@media (min-width: 2000px){
+    #container {
+        width: 20%;
+        height: 40%;
+    }
+
+    .option {
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+    }
+}
